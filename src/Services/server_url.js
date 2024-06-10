@@ -1,0 +1,1 @@
+export const SERVER_URL="https://bms-server-mern-main.onrender.com"

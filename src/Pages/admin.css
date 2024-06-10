@@ -1,0 +1,4 @@
+.MDBTabsLink.active {
+    background-color: blue !important;
+    color: rgb(239, 0, 0) !important;
+  }

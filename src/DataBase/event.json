@@ -1,0 +1,30 @@
+[
+    {
+        "id":"1",
+        "image":"https://i.postimg.cc/pVZfX4SG/three.jpg",
+        "title":"Chalta Hai Comedy",
+        "ticket":"299",
+        "date":"May 5"
+    },
+    {
+        "id":"2",
+        "image":"https://i.postimg.cc/02V0ZFdM/two.jpg",
+        "title":"OML Comedy Pit Stop",
+        "ticket":"499",
+        "date":"May 12"
+    },
+    {
+        "id":"3",
+        "image":"https://i.postimg.cc/FsrxyNcX/one.jpg",
+        "title":"Kisi Ko Batana Mat",
+        "ticket":"799",
+        "date":"May 4"
+    },
+    {
+        "id":"4",
+        "image":"https://i.postimg.cc/YSYgcsgx/four.jpg",
+        "title":"Abhishek Upmanyu LIVE",
+        "ticket":"590",
+        "date":"Sep 6"
+    }
+]
