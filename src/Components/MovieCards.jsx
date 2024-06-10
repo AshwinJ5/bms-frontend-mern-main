@@ -64,27 +64,23 @@ function MovieCards() {
 
         <Row className="movies mx-auto container">
           <OwlCarousel className="owl-theme" {...options}>
-            {
-              landingMovie && landingMovie.slice(landingMovie.length - 4).map(movie => {
-                return (
-                  <Col className="px-2" key={movie._id}>
-                    <Link to={`/moviedetails/${movie._id}`}>
-                      <Card  className="movieCardone d-flex justify-content-space-around me-2 border border-light  mx-auto my-5" style={{ width: '100%', minHeight: "30vh" , borderRadius:"18px"}}>
-                        <Card.Img
-                          variant="top"
-                          src={`${SERVER_URL}/Uploads/${movie.movieThumbnail}`}
-                          height={"280"}
-                          width={"100vh"}
-                        />
-                        <Card.Body className="movieCardone w-100 text-center align-items-center d-grid">
-                          <p className="fw-bold">{movie.movieName.slice(0,15)}</p>
-                        </Card.Body>
-                      </Card>
-                    </Link>
-                  </Col>
-                );
-              })
-            }
+            {landingMovie && landingMovie.slice(landingMovie.length - 4).map(movie => (
+              <Col className="px-2" key={movie._id}>
+                <Link to={`/moviedetails/${movie._id}`}>
+                  <Card className="movieCardone d-flex justify-content-space-around me-2 border border-light mx-auto my-5" style={{ width: '100%', minHeight: "30vh", borderRadius: "18px" }}>
+                    <Card.Img
+                      variant="top"
+                      src={`${SERVER_URL}/Uploads/${movie.movieThumbnail}`}
+                      height={"280"}
+                      width={"100vh"}
+                    />
+                    <Card.Body className="movieCardone w-100 text-center align-items-center d-grid">
+                      <p className="fw-bold">{movie.movieName.slice(0, 15)}</p>
+                    </Card.Body>
+                  </Card>
+                </Link>
+              </Col>
+            ))}
           </OwlCarousel>
         </Row>
       </div>
