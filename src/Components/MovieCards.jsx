@@ -147,8 +147,8 @@ function MovieCards() {
     <div className="moviesCards py-5 w-100" id='sport'>
     <div className="row moviesOneTwo mx-auto w-100 ">
         <div className="col-lg-6 col-sm-12">
-            <div style={{fontWeight:'900'}} className='fs-1'>SPORTS</div>
-            <p className='fs-5'>Be sure not to miss these Sports today.</p>
+            <div style={{fontWeight:'900'}} className='fs-1'>Movies</div>
+            <p className='fs-5'>Be sure not to miss these Movies today.</p>
 
         </div>
         <div className="col-lg-6 col-sm-12 text-end my-auto">
