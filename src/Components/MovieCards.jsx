@@ -45,7 +45,7 @@ function MovieCards() {
 
   useEffect(() => {
     getLandingMovie();
-  }, []);
+  }, []); // Empty dependency array ensures this runs once on mount
 
   return (
     <>
@@ -63,11 +63,11 @@ function MovieCards() {
         </div>
 
         <Row className="movies mx-auto container">
-          <div className="owl-theme d-flex" style={{overflowX:'auto',minWidth:'23%'}} {...options}>
+          <OwlCarousel className="owl-theme" {...options}>
             {
               landingMovie && landingMovie.slice(landingMovie.length - 4).map(movie => {
                 return (
-                  <Col lg={3} className="px-2" key={movie._id}>
+                  <Col className="px-2" key={movie._id}>
                     <Link to={`/moviedetails/${movie._id}`}>
                       <Card  className="movieCardone d-flex justify-content-space-around me-2 border border-light  mx-auto my-5" style={{ width: '100%', minHeight: "30vh" , borderRadius:"18px"}}>
                         <Card.Img
@@ -85,7 +85,7 @@ function MovieCards() {
                 );
               })
             }
-          </div>
+          </OwlCarousel>
         </Row>
       </div>
     </>
