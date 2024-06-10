@@ -3,10 +3,6 @@ import Card from 'react-bootstrap/Card';
 import { Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
-import 'jquery';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel';
-
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { getHomeMoviesAPI } from '../Services/allApi';
@@ -49,7 +45,7 @@ function MovieCards() {
 
   useEffect(() => {
     getLandingMovie();
-  }, []);
+  }, []); // Empty dependency array ensures this runs once on mount
 
   return (
     <>
@@ -67,11 +63,11 @@ function MovieCards() {
         </div>
 
         <Row className="movies mx-auto container">
-          <OwlCarousel className="owl-theme d-flex" style={{overflowX:'auto',minWidth:'23%'}} {...options}>
+          <OwlCarousel className="owl-theme" {...options}>
             {
               landingMovie && landingMovie.slice(landingMovie.length - 4).map(movie => {
                 return (
-                  <Col lg={3} className="px-2" key={movie._id}>
+                  <Col className="px-2" key={movie._id}>
                     <Link to={`/moviedetails/${movie._id}`}>
                       <Card  className="movieCardone d-flex justify-content-space-around me-2 border border-light  mx-auto my-5" style={{ width: '100%', minHeight: "30vh" , borderRadius:"18px"}}>
                         <Card.Img
