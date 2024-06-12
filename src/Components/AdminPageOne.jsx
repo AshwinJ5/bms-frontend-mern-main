@@ -152,7 +152,7 @@ function AdminPageOne() {
         <>
             <div className="moviesOneTwo mt-5 p-3">
                 <div className='mx-auto'>
-                    <div className='h3 fw-bold '>Add / Update Movie</div>
+                    <div className='h3 fw-bold '>Add  Movie</div>
                     <form className=''>
                         <div className=" mt-4 w-100 row  adminInput">
                             <div className='col-lg-6 col-md-6 col-sm-12 col-12'>

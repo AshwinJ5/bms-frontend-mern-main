@@ -63,7 +63,9 @@ useEffect(() => {
 
         </div>
         <div className="col-lg-6 col-sm-12 text-end my-auto">
-            <div className="btn movieButtons rounded-pill text-light">EXPLORE MORE</div>
+        <Link to={'/movies'}>
+              <div className="btn movieButtons rounded-pill text-light">EXPLORE MORE</div>
+            </Link>
         </div>
      </div>
 
