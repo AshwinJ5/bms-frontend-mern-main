@@ -7,6 +7,7 @@ import Newsletter from '../Components/Newsletter'
 import MovieCards from '../Components/MovieCards'
 import EventCards from '../Components/EventCards'
 import SportCards from '../Components/SportCards'
+import HomeMovie from '../Components/HomeMovie'
 
 function Landing() {
   return (
@@ -18,7 +19,7 @@ function Landing() {
 
         <Header/>
         <Banner/>
-        <MovieCards/>
+        <HomeMovie/>
         <SportCards/>
         <EventCards/>
         <Newsletter/>
