@@ -38,7 +38,7 @@ const totalRevenue = movieBookingData.reduce((accumulator, employee) => accumula
         <div className='h3 fw-bold mb-3'>Total Bookings</div>
         <div className=' mb-3'>Total Revenue Earned-   <span style={{backgroundColor:'#6bd4ac',color:"black"}} className="badge fs-6 fw-bolder rounded-pill d-inline"><span style={{backgroundColor:'#6bd4ac',color:"black"}} className='me-2 fs-6'>₹</span>{totalRevenue}</span></div>
         <table className="table align-middle mb-5  table-striped" >
-  <thead  style={{backgroundColor:"#0a1e5e",position:'sticky',top:'0'}} className=" text-center text-light">
+  <thead  style={{backgroundColor:"#5760f6",position:'sticky',top:'0'}} className=" text-center text-light">
     <tr style={{border:"2px #5760f6 solid"}}>
       <th style={{color:"#6bd4ac"}} className="fw-bolder fs-6 ">No</th>
       <th style={{color:"#6bd4ac"}} className="fw-bolder fs-6 ">UserId</th>
@@ -50,7 +50,7 @@ const totalRevenue = movieBookingData.reduce((accumulator, employee) => accumula
   </thead>
   <tbody>
   {movieBookingData.map((movie, index) => (
-    <tr key={index} style={{border:"2px #5760f6 solid"}}>
+    <tr key={index} style={{border:"2px #5760f6 solid" , backgroundColor: index % 2 === 0 ? '#041537 ' : '#0f1e5a' }}>
       <td className='text-white'>
           {index+1}
       </td>

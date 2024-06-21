@@ -48,7 +48,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Landing />}/>
         <Route path='/movies' element={<AllMovies />}/>
-        {/* <Route path='/moviedetails' element={<MovieDetails />}/> */}
+        <Route path='/moviedetails' element={<MovieDetails />}/>
         <Route path='/seats/:id' element={isUserAuthorized?<SeatSelection />:<Navigate to={'/'}/>}/>
         <Route path='/payment/:id' element={isUserAuthorized?<PayMent />:<Navigate to={'/'}/>}/>
         <Route path='/ticket' element={isUserAuthorized?<Ticket />:<Navigate to={'/'}/>}/>

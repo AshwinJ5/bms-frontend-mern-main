@@ -35,7 +35,7 @@ function AdminUsersAll() {
         <div  style={{overflowX:'auto'}}>
 
         <table className="table align-middle mb-5">
-  <thead  style={{backgroundColor:"#0a1e5e",position:'sticky',top:'0'}}  className="text-light text-center">
+  <thead  style={{backgroundColor:"#5760f6",position:'sticky',top:'0'}}  className="text-light text-center">
   <tr style={{border:"2px #5760f6 solid"}}>
       <th style={{color:"#6bd4ac"}} className="fw-bolder fs-6 ">No</th>
       <th style={{color:"#6bd4ac"}} className="fw-bolder fs-6 ">User Id</th>
@@ -48,7 +48,7 @@ function AdminUsersAll() {
   <tbody>
   {allUsers.map((user, index) => (
 
-    <tr key={index}  style={{border:"2px #5760f6 solid"}}>
+    <tr key={index}  style={{border:"2px #5760f6 solid", backgroundColor: index % 2 === 0 ? '#041537 ' : '#0f1e5a'}}>
         <td className='text-light'>{index+1}</td>
       <td>
         

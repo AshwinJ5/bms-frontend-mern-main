@@ -58,7 +58,7 @@ function AdminMoviesList({setMovieData , movieData}) {
       <div className='h3 fw-bold mb-3'>Showing Movie</div>
 <div  style={{overflowX:'auto'}}>
       <table className="table align-middle mb-5" >
-  <thead  style={{backgroundColor:"#0a1e5e",position:'sticky',top:'0'}} className=" text-center text-light">
+  <thead  style={{backgroundColor:"#5760f6",position:'sticky',top:'0'}} className=" text-center text-light">
     <tr style={{border:"2px #5760f6 solid"}}>
       <th style={{color:"#6bd4ac"}} className="fw-bolder fs-6 ">Thumbnail</th>
       <th style={{color:"#6bd4ac"}} className="fw-bolder fs-6 ">Name</th>
@@ -69,7 +69,7 @@ function AdminMoviesList({setMovieData , movieData}) {
   </thead>
   <tbody>
   {landingMovies.map((movie, index) => (
-    <tr key={index} style={{border:"2px #5760f6 solid"}}>
+    <tr key={index} style={{border:"2px #5760f6 solid", backgroundColor: index % 2 === 0 ? '#041537 ' : '#0f1e5a'}}>
       <td>
           <img
               src={`${SERVER_URL}/Uploads/${movie.movieThumbnail}`}
